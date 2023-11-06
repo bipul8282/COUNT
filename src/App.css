@@ -1,38 +1,53 @@
-.App {
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("https://img.freepik.com/free-photo/studio-background-concept-abstract-empty-light-gradient-purple-studio-room-background-product-plain-studio-background_1258-63925.jpg?t=st=1699198379~exp=1699198979~hmac=9edf6af0d4e93a97eba62a2e037bab8c69bef1a9d4280e823353c596eeea6872");
+  margin: 0;
+  padding: 1rem;
+  font-family: system-ui, sans-serif;
+  color: black;
+  background-color: #053bfc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+ 
+}
+
+.container {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.count {
+  font-weight: 800;
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  color: #3498db; /* Blue color for count */
+  animation: pulse 1s infinite alternate;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.add-button {
+  background-color: #3498db; /* Blue color for the button */
   color: white;
+  padding: 0.5rem 1rem;
+  font-size: 2rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
 }
 
-.App-link {
-  color: #61dafb;
+.add-button:hover {
+  background-color: #51fe82; /* Slightly darker blue on hover */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@keyframes pulse {
+  0% {
+    transform: scale(0.8);
   }
-  to {
-    transform: rotate(360deg);
+  100% {
+    transform: scale(1.5);
   }
 }
